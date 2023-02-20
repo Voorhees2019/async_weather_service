@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "weather-service"
+version = "0.1.0"
+description = ""
+authors = ["Artur <test@ex.com>"]
+readme = "README.md"
+packages = [{include = "weather_service"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.8.4"
+aiosqlite = "^0.18.0"
+aiologger = "^0.7.0"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+autopep8 = "^2.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
